@@ -30,7 +30,8 @@ ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts && \
 echo "${DEPLOY_KEY}" > /root/.ssh/id_rsa && \
 chmod 400 /root/.ssh/id_rsa
 echo "git@github.com:${GITHUB_REPOSITORY}.git"
-git clone --recurse-submodules "git@github.com:${GITHUB_REPOSITORY}.git" site && \
+# git clone --recurse-submodules "git@github.com:${GITHUB_REPOSITORY}.git" site && \
+git clone --recurse-submodules "git@github.com:guoyongsoft/hugoblog.git" site && \
 cd site
 
 hugo --gc --minify --cleanDestinationDir
