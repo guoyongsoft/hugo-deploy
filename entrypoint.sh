@@ -31,7 +31,6 @@ echo "${DEPLOY_KEY}" > /root/.ssh/id_rsa && \
 chmod 400 /root/.ssh/id_rsa
 echo "git@github.com:${GITHUB_REPOSITORY}.git"
 # git clone --recurse-submodules "git@github.com:${GITHUB_REPOSITORY}.git" site && \
-cat "git@github.com:${GITHUB_REPOSITORY}.git"
 git clone --recurse-submodules "git@github.com:guoyongsoft/hugoblog.git" site && \
 cd site
 
