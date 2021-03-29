@@ -34,7 +34,7 @@ echo "git@github.com:${GITHUB_REPOSITORY}.git"
 git clone --recurse-submodules "git@github.com:guoyongsoft/hugoblog.git" site && \
 cd site
 
-hugo --gc --minify --cleanDestinationDir --baseUrl="https://guoyongsoft.gitee.io/"
+hugo --gc --minify --cleanDestinationDir --baseUrl="https://blog.ggguo.cn/"
 
 pushd public \
 && git init \
